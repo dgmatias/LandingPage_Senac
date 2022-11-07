@@ -1,0 +1,179 @@
+/* Grid container */
+
+#grid-container {
+    display: grid;
+    grid-template-areas: 
+    "logo menu menu menu"
+    "banner banner banner banner"
+    ;
+}
+
+/* Menu */
+
+#logo {
+    grid-area: logo;
+    height: 20vh;
+    background-color: #F0F0F0;
+    display: flex;
+    justify-content: center;
+}
+
+#img-logo {
+    height: 20vh;
+}
+
+#menu {
+    grid-area: menu;
+}
+
+#container-menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 20vh;
+    background-color: #F0F0F0;
+    /* flex-wrap: wrap; */
+}
+
+.item-menu {
+    color: black;
+    font-family: 'Lexend Mega', sans-serif;
+    text-decoration: none;
+}
+
+/* Banner */
+
+#banner {
+    grid-area: banner;
+    width: 100%;
+}
+
+#container-banner {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #B9AFBA;
+    height: 80vh;
+    align-items: center;
+    /* display: flex; */
+}
+
+.item-banner {
+    font-family: 'Chilanka', cursive;
+    /* line-height: 70px; */
+}
+
+#h1-banner {
+    font-size: 70px;
+}
+
+#h2-banner {
+    font-size: 27px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#button-banner {
+    background-color: #F0F0F0;
+    border: 2px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    padding: .5rem;
+}
+
+#button-banner:hover {
+    background-color: #3D3C3C;
+    color: white;
+}
+
+
+#img-banner {
+    border-radius: 69px;
+    box-shadow: 2px 2px 2px 1px #3D3C3C;
+}
+
+
+
+@media (min-width: 1800px) {
+
+    /* Meu monitor aqui em casa é 1360 x 720 então não sei se irá ficar bom em monitores maiores, tentei testar em telas maiores com a ferramenta de desenvolvedor e não consegui ver com clareza isso por causa do zoom automatico que ficava muito baixo, então esses valores abaixo foram um chute*/
+
+    .item-menu {
+        font-size: 40px;
+        /* background-color: green; */
+    }
+
+    #h1-banner {
+        font-size: 90px;
+    }
+
+    #h2-banner {
+        font-size: 50px;
+    }
+
+    #button-banner {
+        font-size: 40px;
+    }
+}
+
+
+@media  (max-width: 950px) {
+
+    .item-menu {
+        font-size: 25px;
+        /* background-color: aqua; */
+    }
+
+
+    #img-banner {
+        display: none;
+    }
+
+    #container-banner {
+        justify-content: center;
+    }
+
+    #h1-banner {
+        font-size: 90px;
+    }
+
+    #h2-banner {
+        font-size: 50px;
+    }
+
+    #button-banner {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .item-menu {
+        font-size: 12.5px;
+        /* background-color: red; */
+    }
+
+
+    #img-banner {
+        display: none;
+    }
+
+    #container-banner {
+        justify-content: center;
+    }
+
+    #h1-banner {
+        font-size: 55px;
+    }
+
+    #h2-banner {
+        font-size: 20px;
+    }
+
+    #button-banner {
+        font-size: 16px;
+    }
+}
+
+
+
