@@ -1,6 +1,6 @@
 # Landing Page
 
-Site feito com Html e Css, tentando ao máximo utilizar a semântica do html e também tentando deixar o site com a melhor responsívidade possivel utilizando jQuery.
+Site feito com Html e Css, tentando ao máximo utilizar a semântica do html e também tentando deixar o site com a melhor responsívidade possivel utilizando @MediaQuery.
 
 ## Linguagens
 
